@@ -22,13 +22,13 @@ def random_number():
 # функции для включения музыки
 def mus_money():
     pygame.mixer.init()
-    pygame.mixer.Channel(1).play(pygame.mixer.Sound("C:\\Users\\nicit\\Desktop\\игра\\музыка\\popolnenie-scheta-v-kompyuternoy-igre.mp3"))
+    pygame.mixer.Channel(1).play(pygame.mixer.Sound("music\\popolnenie-scheta-v-kompyuternoy-igre.mp3"))
 def mus_kill():
     pygame.mixer.init()
-    pygame.mixer.Channel(3).play(pygame.mixer.Sound("C:\\Users\\nicit\\Desktop\\игра\\музыка\\launch1.mp3"))    
+    pygame.mixer.Channel(3).play(pygame.mixer.Sound("music\\launch1.mp3"))    
 def mus_axe():
     pygame.mixer.init()
-    pygame.mixer.Channel(4).play(pygame.mixer.Sound("C:\\Users\\nicit\\Desktop\\игра\\музыка\\Звук приобретения предметов в виртуальной игре.mp3"))    
+    pygame.mixer.Channel(4).play(pygame.mixer.Sound("music\\Звук приобретения предметов в виртуальной игре.mp3"))    
 
 # ОСНОВНАЯ ЧАСТЬ
 def run():
@@ -42,7 +42,7 @@ def run():
     score_font = pygame.font.SysFont("comicsansms", 15)
     # основная музыка
     pygame.mixer.init()
-    pygame.mixer.Channel(0).play(pygame.mixer.Sound("C:\\Users\\nicit\\Desktop\\игра\\музыка\\igra_prestolov_-_Glavnaya_zastavka_63864630.mp3"))
+    pygame.mixer.Channel(0).play(pygame.mixer.Sound("music\\igra_prestolov_-_Glavnaya_zastavka_63864630.mp3"))
     # функции, отвечающие за табло
     def Your_score(score):
         value = score_font.render("Ваш счёт: " + str(score), True, yellow)
@@ -88,14 +88,14 @@ def run():
     x_money=random_number()
     y_money=random_number()
     # считываем предыдущий рекорд
-    file=open("C:\\Users\\nicit\\Desktop\\игра\\файлы проги\\record.txt",'r')
+    file=open("files\\record.txt",'r')
     record=file.read()
     file.close()
 
     # основной цикл
     while True:  
         # управление и данные вариса  
-        controls.events(varis)
+        events(varis)
         varis.update_varis()
         # цвет экрана
         screen.fill(blue)
@@ -202,11 +202,11 @@ def run():
     # записываем новый рекорд
     if kill_person>int(record):
         record=kill_person
-    file=open("C:\\Users\\nicit\\Desktop\\игра\\файлы проги\\record.txt",'w')
+    file=open("files\\record.txt",'w')
     file.write(str(record))
     file.close()
     # остановка музыки
     pygame.mixer.Channel(0).stop()
     # задержка экрана
     pygame.time.delay(300)
-    return win
+    return not(win)

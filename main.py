@@ -3,7 +3,7 @@ from files.all_play import run
 from files.last_moment import end
 
 def playing():
-    start() 
+    # start() 
     win=run()
     print(win)
     end(win)

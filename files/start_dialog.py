@@ -12,7 +12,7 @@ black=(0,0,0)
 def start():
     # оформление
     pygame.init()
-    pygame.mixer.music.load("C:\\Users\\nicit\\Desktop\\игра\\музыка\\c245b81d72ab0bb (1).mp3")
+    pygame.mixer.music.load("music\\c245b81d72ab0bb (1).mp3")
     pygame.mixer.music.play()
     screen=pygame.display.set_mode((1300,800))
     pygame.display.set_caption("Игра престолов")

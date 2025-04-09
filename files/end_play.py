@@ -2,7 +2,7 @@ import pygame
 class Varis2():
     def __init__(self,screen):
         self.screen=screen
-        self.image=pygame.image.load("C:\\Users\\nicit\\Desktop\\игра\\картинки\\варис умирает.jpg")
+        self.image=pygame.image.load("images\\варис умирает.jpg")
         self.image = pygame.transform.scale(self.image, (1000, 740))
         self.rect=self.image.get_rect()
         self.screen_rect=screen.get_rect()
@@ -14,7 +14,7 @@ class Varis2():
 class Varis3():
     def __init__(self,screen):
         self.screen=screen
-        self.image=pygame.image.load("C:\\Users\\nicit\\Desktop\\игра\\картинки\\варис победил.jpg")
+        self.image=pygame.image.load("images\\варис победил.jpg")
         self.image = pygame.transform.scale(self.image, (980, 740))
         self.rect=self.image.get_rect()
         self.screen_rect=screen.get_rect()
@@ -25,7 +25,7 @@ class Varis3():
 class Tyrion2():
     def __init__(self,screen):
         self.screen=screen
-        self.image=pygame.image.load("C:\\Users\\nicit\\Desktop\\игра\\картинки\\тирион проиграл.jpg")
+        self.image=pygame.image.load("images\\тирион проиграл.jpg")
         self.image = pygame.transform.scale(self.image, (1300, 800))
         self.rect=self.image.get_rect()
         self.screen_rect=screen.get_rect()
@@ -36,7 +36,7 @@ class Tyrion2():
 class Tyrion3():
     def __init__(self,screen):
         self.screen=screen
-        self.image=pygame.image.load("C:\\Users\\nicit\\Desktop\\игра\\картинки\\тирион выиграл.webp")
+        self.image=pygame.image.load("images\\тирион выиграл.webp")
         self.image = pygame.transform.scale(self.image, (1300, 800))
         self.rect=self.image.get_rect()
         self.screen_rect=screen.get_rect()

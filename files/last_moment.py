@@ -26,7 +26,7 @@ def end(win):
     start=time.time()
     if win==False:
         # воспроизведение музыки
-        pygame.mixer.music.load("C:\\Users\\nicit\\Desktop\\игра\\музыка\\193e2427b377e45.mp3")
+        pygame.mixer.music.load("music\\193e2427b377e45.mp3")
         pygame.mixer.music.play()
         ######
         while True:
@@ -49,7 +49,7 @@ def end(win):
     # часть 2
     elif win==True:
         # воспроизведение музыки
-        pygame.mixer.music.load("C:\\Users\\nicit\\Desktop\\игра\\музыка\\e377e9b8d135e68.mp3")
+        pygame.mixer.music.load("music\\e377e9b8d135e68.mp3")
         pygame.mixer.music.play()
         #########
         start=time.time()
