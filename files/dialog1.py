@@ -2,7 +2,7 @@ import pygame
 class Baylish1():
     def __init__(self,screen):
         self.screen=screen
-        self.image=pygame.image.load("картинки\\мизинец говорит1.jpg")
+        self.image=pygame.image.load("images\\мизинец говорит1.jpg")
         self.image = pygame.transform.scale(self.image, (990, 690))
         self.rect=self.image.get_rect()
         self.screen_rect=screen.get_rect()
@@ -13,7 +13,7 @@ class Baylish1():
 class Varis1():
     def __init__(self,screen):
         self.screen=screen
-        self.image=pygame.image.load("C:\\Users\\nicit\\Desktop\\игра\\картинки\\варис говорит1.jpg")
+        self.image=pygame.image.load("images\\варис говорит1.jpg")
         self.image = pygame.transform.scale(self.image, (660, 660))
         self.rect=self.image.get_rect()
         self.screen_rect=screen.get_rect()
@@ -24,7 +24,7 @@ class Varis1():
 class Tyrion1():
     def __init__(self,screen):
         self.screen=screen
-        self.image=pygame.image.load("C:\\Users\\nicit\\Desktop\\игра\\картинки\\тирион пойман.jpg")
+        self.image=pygame.image.load("images\\тирион пойман.jpg")
         self.image = pygame.transform.scale(self.image, (1300, 800))
         self.rect=self.image.get_rect()
         self.screen_rect=screen.get_rect()
@@ -35,7 +35,7 @@ class Tyrion1():
 class Tywin1():
     def __init__(self,screen):
         self.screen=screen
-        self.image=pygame.image.load("C:\\Users\\nicit\\Desktop\\игра\\картинки\\тавйвин главный.webp")
+        self.image=pygame.image.load("images\\тайвин главный.webp")
         self.image = pygame.transform.scale(self.image, (1000, 700))
         self.rect=self.image.get_rect()
         self.screen_rect=screen.get_rect()

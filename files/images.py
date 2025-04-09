@@ -1,9 +1,9 @@
 import pygame
 import random
-filename_varis="C:\\Users\\nicit\\Desktop\\игра\\картинки\\варис.webp"
-filename_arya="C:\\Users\\nicit\\Desktop\\игра\\картинки\\арья.webp"
-filename_bronn="C:\\Users\\nicit\\Desktop\\игра\\картинки\\бронн черноводный.webp"
-filename_axe="C:\\Users\\nicit\\Desktop\\игра\\картинки\\топор.webp"
+filename_varis="images\\варис.webp"
+filename_arya="images\\арья.webp"
+filename_bronn="images\\бронн черноводный.webp"
+filename_axe="images\\топор.webp"
 class basa(pygame.sprite.Sprite):
     def __init__(self,screen,filename,size):
         pygame.sprite.Sprite.__init__(self)
